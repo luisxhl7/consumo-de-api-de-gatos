@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+        #imagenGato{
+            width: 500px;
+            height: 500px;
+        }
+        .intp{
+            width: 500px;
+        }
+    </style>
+        <label for="height">
+            height:
+            <input type="text" class="intp" name="titulo" id="height">
+        </label>
+        <label for="width">
+            width:
+            <input type="text" class="intp" name="titulo" id="width">
+        </label>
+        <label for="titulo">
+            id : 
+            <input type="text" class="intp" name="titulo" id="titulo">
+        </label>
+        <label for="urlImg">
+            url : 
+            <input type="text" class="intp" name="titulo" id="urlImg">
+        </label>
+
+    <div class="contImagen">
+        <img alt="" id="imagenGato">
+    </div>
+    <button id="boton">CAMBIAR IMAGEN</button>
+    <script src="./apiGatos.js" type="module"></script>
+</body>
+</html>
